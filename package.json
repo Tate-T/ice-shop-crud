@@ -1,0 +1,30 @@
+{
+  "name": "ice-shop",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "npx parcel src/index.html",
+    "build": "parcel build src/index.html --no-cache --public-url /ice-shop/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "server": "npx json-server ice-data.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tate-T/ice-shop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tate-T/ice-shop/issues"
+  },
+  "homepage": "https://github.com/Tate-T/ice-shop#readme",
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "json-server": "^1.0.0-beta.3"
+  }
+}

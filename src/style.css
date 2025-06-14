@@ -1,0 +1,32 @@
+img {
+    width: 300px;
+}
+
+body {
+  background: linear-gradient(135deg, #74ebd5, #4e68da);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+  padding: 2rem;
+  width: 320px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
