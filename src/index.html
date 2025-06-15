@@ -6,8 +6,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <ul></ul>
+<body> 
+    <div class="hero-backdrop">
+    <div class="modal">
+        <h2 class="modal-title">Додайте морозиво!</h2>
+        <form action="" class="form">
+            <ul class="modal-list">
+                <li class="modal-item"><label for="1" class="modal-text">Введіть назву морозива</label><input id="1" class="modal-input" name="nameCollect" required type="text"></li>
+                <li class="modal-item"><label for="2" class="modal-text">Введіть опис морозива</label><input id="2" class="modal-input" name="discriptionCollect" required type="text"></li>
+                <li class="modal-item"><label for="3" class="modal-text">Введіть ціну морозива</label><input id="3" class="modal-input" name="priceCollect" required type="number"></li>
+                <li class="modal-item"><label for="4" class="modal-text">Вставте посилання на фото морозива</label><input id="4" class="modal-input" name="photoCollect" required type="text"></li>
+            </ul>
+            <button type="submit">Додати</button>
+        </form>
+    </div>
+    </div>
+        <button class="add-ice-cream" type="button">add ice-cream</button>
+    <ul class="list"></ul>
     <script type="module" src="index.js"></script>
 </body>
 </html>
