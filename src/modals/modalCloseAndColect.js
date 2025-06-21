@@ -1,3 +1,5 @@
+import { postIceCreamApi } from "../api/postIceCreamsApi";
+
 export const collectModalInfo = (form) => {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -8,11 +10,13 @@ export const collectModalInfo = (form) => {
     document.querySelector(`.hero-backdrop`).style.visibility = "hidden";
     document.querySelector(`.hero-backdrop`).style.display = "none";
     const iceCreamBlock = {
-      iceCreamName: name,
-      iceCreamDescription: discription,
-      iceCreamPrice: price,
-      iceCreamPhoto: photo,
+      title: name,
+      description: discription,
+      price: price,
+      photo: photo,
     };
+    postIceCreamApi(iceCreamBlock)
+
     e.target.elements.nameCollect.value = "";
     e.target.elements.discriptionCollect.value = "";
     e.target.elements.priceCollect.value = "";

@@ -16,3 +16,9 @@ backdropOpen(openModalButton)
 
 
 collectModalInfo(document.querySelector(".form"))
+getIceCreamsApi().then(
+    (data) =>{
+        console.log(data);
+      document.querySelector(".list").innerHTML = makeList(data);
+    }
+  );

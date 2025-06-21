@@ -1,74 +1,95 @@
 {
-    "iceCreams": [
-        {
-            "id": 1,
-            "title": "Vanilla Delight",
-            "description": "A classic vanilla ice cream made with real vanilla beans, offering a creamy and rich flavor.",
-            "price": 3.50,
-            "photo": "https://www.foodandwine.com/thmb/QnTrAIt3aY1g4ToQEk-jULmKMsQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/vanilla-ice-cream-FT-RECIPE0324-cebca493f53c4431a0049ea65bfb4796.jpg"
-        },
-        {
-            "id": 2,
-            "title": "Chocolate Bliss",
-            "description": "Rich and creamy chocolate ice cream made with premium cocoa, perfect for chocolate lovers.",
-            "price": 4.00,
-            "photo": "https://www.allrecipes.com/thmb/dF2YLgfKMy2Ee_kBskeoMBnxKkk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-56803-very-chocolate-ice-cream-Beauties-2x1-9186fbd502194b379eae3041f014fd37.jpg"
-        },
-        {
-            "id": 3,
-            "title": "Strawberry Dream",
-            "description": "A refreshing strawberry ice cream made with real strawberries, ideal for a summer treat.",
-            "price": 3.75,
-            "photo": "https://www.allrecipes.com/thmb/pH8hoFfytcOT9XVK1DSmxv3L0OU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/140877-easy-eggless-strawberry-ice-cream-ddmfs-3x4-1-092e4d11b59049c8b3843014ea3c57f2.jpg"
-        },
-        {
-            "id": 4,
-            "title": "Mint Chocolate Chip",
-            "description": "Cool mint ice cream with rich chocolate chips, a perfect combination of flavors.",
-            "price": 4.25,
-            "photo": "https://buttermilkbysam.com/wp-content/uploads/2023/06/mint-choc-chip-ice-cream-6.jpg"
-        },
-        {
-            "id": 5,
-            "title": "Cookies and Cream",
-            "description": "Creamy vanilla ice cream mixed with chunks of chocolate cookies, a favorite among many.",
-            "price": 4.50,
-            "photo": "https://www.kingarthurbaking.com/sites/default/files/styles/featured_image/public/2022-05/cookies-and-cream-ice-cream_0422.jpg?itok=-gxLG1uG"
-        },
-        {
-            "id": 6,
-            "title": "Pistachio Paradise",
-            "description": "A unique pistachio ice cream made with real pistachios, offering a nutty and creamy experience.",
-            "price": 4.75,
-            "photo": "https://buttermilkbysam.com/wp-content/uploads/2024/06/pistachio-ice-cream-4.jpg"
-        },
-        {
-            "id": 7,
-            "title": "Mango Tango",
-            "description": "A tropical mango ice cream made with real mango puree, perfect for a refreshing treat.",
-            "price": 4.00,
-            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2WM0OzU1_YYRGTj1tpKeYKwj1IqiudNSF9uSrTcCJcJJ5qVxCU55q5h5UZpY4BO-HBsA&usqp=CAU"
-        },
-        {
-            "id": 8,
-            "title": "Coffee Craze",
-            "description": "Rich coffee ice cream made with real coffee beans, ideal for coffee lovers.",
-            "price": 4.25,
-            "photo": "https://www.simplyrecipes.com/thmb/Y-D7jtMXRW_q3IZmZ-aGuguw_QE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2007__04__coffee-ice-cream-vertical-00dc174a766a4ff79f443e516e11fcb7.jpg"
-        },
-        {
-            "id": 9,
-            "title": "Rocky Road",
-            "description": "A delightful mix of chocolate ice cream with marshmallows and nuts, a classic favorite.",
-            "price": 4.50,
-            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpR4P1dGVB0Pk3EXI4wyuTGJmmiO_-Ijf1qtagZfWTtIESMmnWPXmPs43oCPRu67qApK8&usqp=CAU"
-        },
-        {
-            "id": 10,
-            "title": "Butter Pecan",
-            "description": "Creamy butter pecan ice cream with roasted pecans, offering a rich and nutty flavor.",
-            "price": 4.75,
-            "photo": "https://i0.wp.com/owlbbaking.com/wp-content/uploads/2022/05/Butter-Pecan-Ice-Cream-Sandwiches-17.jpg?fit=1200%2C1800&ssl=1"
-        }
-    ]
+  "iceCreams": [
+    {
+      "id": "1",
+      "title": "Vanilla Delight",
+      "description": "A classic vanilla ice cream made with real vanilla beans, offering a creamy and rich flavor.",
+      "price": 3.5,
+      "photo": "https://www.foodandwine.com/thmb/QnTrAIt3aY1g4ToQEk-jULmKMsQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/vanilla-ice-cream-FT-RECIPE0324-cebca493f53c4431a0049ea65bfb4796.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Chocolate Bliss",
+      "description": "Rich and creamy chocolate ice cream made with premium cocoa, perfect for chocolate lovers.",
+      "price": 4,
+      "photo": "https://www.allrecipes.com/thmb/dF2YLgfKMy2Ee_kBskeoMBnxKkk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-56803-very-chocolate-ice-cream-Beauties-2x1-9186fbd502194b379eae3041f014fd37.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Strawberry Dream",
+      "description": "A refreshing strawberry ice cream made with real strawberries, ideal for a summer treat.",
+      "price": 3.75,
+      "photo": "https://www.allrecipes.com/thmb/pH8hoFfytcOT9XVK1DSmxv3L0OU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/140877-easy-eggless-strawberry-ice-cream-ddmfs-3x4-1-092e4d11b59049c8b3843014ea3c57f2.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Mint Chocolate Chip",
+      "description": "Cool mint ice cream with rich chocolate chips, a perfect combination of flavors.",
+      "price": 4.25,
+      "photo": "https://buttermilkbysam.com/wp-content/uploads/2023/06/mint-choc-chip-ice-cream-6.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Cookies and Cream",
+      "description": "Creamy vanilla ice cream mixed with chunks of chocolate cookies, a favorite among many.",
+      "price": 4.5,
+      "photo": "https://www.kingarthurbaking.com/sites/default/files/styles/featured_image/public/2022-05/cookies-and-cream-ice-cream_0422.jpg?itok=-gxLG1uG"
+    },
+    {
+      "id": "6",
+      "title": "Pistachio Paradise",
+      "description": "A unique pistachio ice cream made with real pistachios, offering a nutty and creamy experience.",
+      "price": 4.75,
+      "photo": "https://buttermilkbysam.com/wp-content/uploads/2024/06/pistachio-ice-cream-4.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Mango Tango",
+      "description": "A tropical mango ice cream made with real mango puree, perfect for a refreshing treat.",
+      "price": 4,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2WM0OzU1_YYRGTj1tpKeYKwj1IqiudNSF9uSrTcCJcJJ5qVxCU55q5h5UZpY4BO-HBsA&usqp=CAU"
+    },
+    {
+      "id": "8",
+      "title": "Coffee Craze",
+      "description": "Rich coffee ice cream made with real coffee beans, ideal for coffee lovers.",
+      "price": 4.25,
+      "photo": "https://www.simplyrecipes.com/thmb/Y-D7jtMXRW_q3IZmZ-aGuguw_QE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2007__04__coffee-ice-cream-vertical-00dc174a766a4ff79f443e516e11fcb7.jpg"
+    },
+    {
+      "id": "9",
+      "title": "Rocky Road",
+      "description": "A delightful mix of chocolate ice cream with marshmallows and nuts, a classic favorite.",
+      "price": 4.5,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpR4P1dGVB0Pk3EXI4wyuTGJmmiO_-Ijf1qtagZfWTtIESMmnWPXmPs43oCPRu67qApK8&usqp=CAU"
+    },
+    {
+      "id": "10",
+      "title": "Butter Pecan",
+      "description": "Creamy butter pecan ice cream with roasted pecans, offering a rich and nutty flavor.",
+      "price": 4.75,
+      "photo": "https://i0.wp.com/owlbbaking.com/wp-content/uploads/2022/05/Butter-Pecan-Ice-Cream-Sandwiches-17.jpg?fit=1200%2C1800&ssl=1"
+    },
+    {
+      "id": "961c",
+      "iceCreamName": "vadaf",
+      "iceCreamDescription": "delicious",
+      "iceCreamPrice": "100",
+      "iceCreamPhoto": "https"
+    },
+    {
+      "id": "30f4",
+      "title": "vanilla",
+      "description": "delicious",
+      "price": "1",
+      "photo": "https"
+    },
+    {
+      "id": "d539",
+      "title": "chocolate ice cream",
+      "description": "ice cream with chocolate in it",
+      "price": "5",
+      "photo": "https://sugarpursuit.com/wp-content/uploads/2023/05/Chocolate-ice-cream-thumbnail.jpg"
+    }
+  ]
 }
