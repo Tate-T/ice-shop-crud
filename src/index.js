@@ -2,6 +2,7 @@ import { getIceCreamsApi } from "./api/getIceCreamsApi.js";
 import { makeList } from "./markUp/makeListMarkUp.js";
 import { backdropOpen } from "./modals/addModalOpen.js";
 import { collectModalInfo } from "./modals/modalCloseAndColect.js";
+import { deleteIceCreamApi } from "./api/deleteIceCreamApi.js";
 
   getIceCreamsApi().then(
     (data) =>{
@@ -23,6 +24,16 @@ getIceCreamsApi().then(
     }
   );
 // Операція видалення
-document.querySelector(".delete-btn").addEventListener("click", (event) => {
-console.log(event.target)
+document.querySelector(".list").addEventListener("click", (event) => {
+if(event.target.textContent === "Deleate"){
+  const item = event.target.parentElement
+  console.log(item.id)
+  deleteIceCreamApi(item.id)
+  getIceCreamsApi().then(
+    (data) =>{
+        console.log(data);
+      document.querySelector(".list").innerHTML = makeList(data);
+    }
+  );
+}
 })
