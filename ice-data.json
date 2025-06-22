@@ -90,6 +90,13 @@
       "description": "ice cream with chocolate in it",
       "price": "5",
       "photo": "https://sugarpursuit.com/wp-content/uploads/2023/05/Chocolate-ice-cream-thumbnail.jpg"
+    },
+    {
+      "id": "b5bc",
+      "title": "Шоколадне",
+      "description": "шоколад",
+      "price": "99999999999",
+      "photo": "https://buttermilkbysam.com/wp-content/uploads/2023/07/no-churn-chocolate-ice-cream-7.jpg"
     }
   ]
 }

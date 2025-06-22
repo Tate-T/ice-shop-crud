@@ -1,17 +1,21 @@
-export const  makeList = (arr) => {
+export const makeList = (arr) => {
   const objectChange = arr
     .map((object) => {
       const newObject = `
         <li class="ice-cream">
-      <h2>title:${object.title}</h2>
-     <p>id:${object.id}</p>
-      <p>description:${object.description}</p>
-      <p>price:${object.price}</p>
+      <h2>${object.title}</h2>
+     <p>${object.id}</p>
+      <p>${object.description}</p>
+      <p>${object.price}</p>
       <img src="${object.photo}" alt="${object.title}">
+         <button class="delete-btn" type="button" >Deleate</button>
+        <button type="button">Edit</button>
       </li>
+      
         `;
       return newObject;
     })
+
     .join("");
   return objectChange;
-}
+};

@@ -22,3 +22,7 @@ getIceCreamsApi().then(
       document.querySelector(".list").innerHTML = makeList(data);
     }
   );
+// Операція видалення
+document.querySelector(".delete-btn").addEventListener("click", (event) => {
+console.log(event.target)
+})
