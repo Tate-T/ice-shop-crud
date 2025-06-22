@@ -3,6 +3,7 @@ import { makeList } from "./markUp/makeListMarkUp.js";
 import { backdropOpen } from "./modals/addModalOpen.js";
 import { collectModalInfo } from "./modals/modalCloseAndColect.js";
 import { deleteIceCreamApi } from "./api/deleteIceCreamApi.js";
+import {updateIceCreamApi} from "./api/updateIceCreamApi.js"
 
   getIceCreamsApi().then(
     (data) =>{
@@ -37,3 +38,10 @@ if(event.target.textContent === "Deleate"){
   );
 }
 })
+//операція редагування
+document.querySelector(".list").addEventListener("click", (e) => {
+if(e.target.textContent === "Edit"){
+  console.log(e.target.parentElement.id);
+  updateIceCreamApi(e.target.parentElement.id)
+}
+});
