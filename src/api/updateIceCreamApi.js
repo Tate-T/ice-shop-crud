@@ -1,17 +1,20 @@
-export const updateIceCreamApi = (id, iceCream) => {
-    const options = {
+export const updateIceCreamApi = async (id, iceCream) => {
+  const options = {
+    method: "PATCH",
 
-        method: "PATCH",
+    body: JSON.stringify(iceCream),
 
-        body: JSON.stringify(iceCream),
+    headers: {
+      "Content-Type": "application/json; charset=UTF-8",
+    },
+  };
+    try {
+    return await fetch(
+      `https://jsonplaceholder.typicode.com/posts/${id}`,
+      options
+    ).then((response) => response.json());
+  } catch (error) {
+    console.log(error);
+  }
 
-        headers: {
-
-            "Content-Type": "application/json; charset=UTF-8",
-
-        }
-    }
-    return fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, options)
-
-        .then(response => response.json())
-}
+};

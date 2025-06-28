@@ -1,7 +1,8 @@
 import { postIceCreamApi } from "../api/postIceCreamsApi";
-
+import { getIceCreamsApi } from "../api/getIceCreamsApi";
+import { makeList } from "../markUp/makeListMarkUp";
 export const collectModalInfo = (form) => {
-  form.addEventListener("submit", (e) => {
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const name = e.target.elements.nameCollect.value;
     const discription = e.target.elements.discriptionCollect.value;
@@ -15,8 +16,11 @@ export const collectModalInfo = (form) => {
       price: price,
       photo: photo,
     };
-    postIceCreamApi(iceCreamBlock)
-
+    await postIceCreamApi(iceCreamBlock);
+    await getIceCreamsApi().then((data) => {
+      console.log(data);
+      document.querySelector(".list").innerHTML = makeList(data);
+    });
     e.target.elements.nameCollect.value = "";
     e.target.elements.discriptionCollect.value = "";
     e.target.elements.priceCollect.value = "";
