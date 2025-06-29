@@ -4,10 +4,18 @@ import { backdropOpen } from "./modals/addModalOpen.js";
 import { collectModalInfo } from "./modals/modalCloseAndColect.js";
 import { deleteIceCreamApi } from "./api/deleteIceCreamApi.js";
 import { updateIceCreamApi } from "./api/updateIceCreamApi.js";
+import { collectModalInfoEdit } from "./modals/editModalCloseAndCollect.js"
 
 getIceCreamsApi().then((data) => {
   console.log(data);
   document.querySelector(".list").innerHTML = makeList(data);
+
+  document.querySelector(".list").addEventListener("click", async (event) => {
+    console.log("test")
+  if (event.target.textContent === "Edit") {
+    collectModalInfoEdit(document.querySelector(".edit-form"))
+  }
+});
 });
 
 const openModalButton = document.querySelector(".add-ice-cream");
@@ -27,10 +35,9 @@ document.querySelector(".list").addEventListener("click", async (event) => {
     });
   }
 });
+
 //операція редагування
-document.querySelector(".list").addEventListener("click", async (e) => {
-  if (e.target.textContent === "Edit") {
-    console.log(e.target.parentElement.id);
-    await updateIceCreamApi(e.target.parentElement.id);
-  }
-});
+// document.querySelector(".edit-button").addEventListener("click", async () => {
+//   collectModalInfoEdit(document.querySelector(".edit-form"))
+
+// });

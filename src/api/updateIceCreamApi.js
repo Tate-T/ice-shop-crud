@@ -1,6 +1,6 @@
 export const updateIceCreamApi = async (id, iceCream) => {
   const options = {
-    method: "PATCH",
+    method: "PUT",
 
     body: JSON.stringify(iceCream),
 
